@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <header>
+    <h1>todos</h1>
+  </header>
+  <section class="w app clear">
+    <section class="header">
+      <input type="checkbox" id="toggall" class="togglall">
+      <label for="toggall">❯</label>
+      <input type="text" class="input" placeholder="请输入内容">
+    </section>
+    <section class="main">
+      <div class="box">
+        <ul>
+          <li class="clear">
+            <span class="checked"></span>
+            <p>test</p>
+            <button>x</button>
+            <input type="text" class="hidden">
+          </li>
+          <li class="clear completed">
+            <span class="checked"></span>
+            <p>test</p>
+            <button>x</button>
+            <input type="text" class="hidden">
+          </li>
+          <li class="clear completed">
+            <span class="checked"></span>
+            <p>test</p>
+            <button>x</button>
+            <input type="text" class="hidden">
+          </li>
+        </ul>
+      </div>
+      <footer>
+        <div class="left">
+          <span>1 item left</span>
+        </div>
+        <div class="center clear">
+          <ul class="clear">
+            <li class="all active">All</li>
+            <li class="activeli">Active</li>
+            <li class="completed">Completed</li>
+          </ul>
+        </div>
+        <div class="right">
+          <span>Clear completed</span>
+        </div>
+      </footer>
+    </section>
+
+  </section>
+
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+html,
+h1,
+body,
+ul,
+p {
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+li{
+	list-style: none;
+}
+
+.w {
+	width: 1190px;
+	margin: 0 auto;
+}
+.clear:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.clear{
+	zoom: 1;
+
+}
+
+header h1 {
+	width: 100%;
+	font-size: 100px;
+	font-weight: 100;
+	text-align: center;
+	color: rgba(175, 47, 47, 0.15);
+}
+.header {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	height: 60px;
+}
+
+.header .input {
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	padding: 16px 16px 16px 60px;
+	box-sizing: border-box;
+	font-size: 24px;
+	color: inherit;
+}
+
+.header .togglall {
+	display: none;
+}
+.header label{
+	transform: rotate(90deg);
+	font-size: 30px;
+	outline: none;
+	position: absolute;
+	top: 10px;
+	left: 23px;
+}
+.togglall:checked + label {
+	color: rgba(175, 47, 47, 0.15);
+}
+.main {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	margin-top: 60px;
+}
+.main ul li{
+	margin-top: 2px;
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 10px 0;
+  align-items: center;
+  display: flex;
+}
+.main ul li p{
+	float: left;
+	font-size: 30px;
+	background-color: #fff;
+	font-weight: normal;
+	text-align: left;
+	width: 80%;
+	margin-left: 10px;
+}
+.main ul li:hover button{
+	display: block;
+}
+.main ul li button:hover{
+	color: #af5b5e;
+}
+.main ul li button{
+	display: none;
+	float: right;
+	color: #cc9a9a;
+	transition: color 0.2s ease-out;
+	border: 0;
+	outline: none;
+	background-color: #fff;
+	font-size: 30px;
+}
+.main ul li .checked{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E');
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+.main ul li .hidden{
+	display: none;
+}
+.main ul li.completed p{
+	color: #d9d9d9;
+	text-decoration: line-through;
+}
+.main ul li.completed .checked{
+	background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E');
+}
+footer{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	bottom: -47px;
+	background-color: #fff;
+	font-size: 14px;
+	box-sizing: border-box;
+	padding: 10px;
+	line-height: 20px;
+}
+footer .left{
+	float: left;
+	margin-right: 90px;
+}
+footer .right{
+	float: left;
+}
+footer .right span{
+	cursor: pointer;
+}
+footer .center{
+	float: left;
+}
+footer .center ul{
+	background-color: #fff;
+	margin-right: 160px
+}
+footer .center ul li{
+	float: left;
+	margin-top: 0;
+	padding: 0;
+	margin-right: 20px;
+}
+footer .center ul li.active{
+	border: 1px solid #000;
+	padding: 2px 5px;
+	box-sizing: border-box;
+
+}
